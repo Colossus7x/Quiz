@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+ * Programmer: Zachary Pilkenton
+ * JavaScript Lab Six
+ * Week Nine
+ * Date: 3/20/17
+ * Purpose: Create a multiple choices quiz which includes five questions. Create your own set of questions.
+			Each question should include three choices. If the user chooses an answer, display an alert message
+			stating if the selected item is correct or incorrect. Also, increment the score by 20 for each correct answer.
+			After the user completes all five questions, display an alert message showing the calculated score out of 100.
+			i.e. Your score is 80 out of 100.
+-->
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+ 		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script src="scripts.js"></script><!--External Scripts Sheet-->
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Lab Six</title>
+		<meta name="description" content="Quiz">
+		<meta name="author" content="Zack">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+
+	</head>
+
+	<body>
+		<h1>Score:
+			<p id="printScore"></p>
+		</h1>
+
+		<ol>
+			<li><p>What is your favorite color?</p></li>
+				<p><input type="radio" name="color" value="Red" />Red</p>
+				<p><input type="radio" name="color" value="Blue" />Blue</p>
+				<p><input type="radio" name="color" value="Green" />Green</p>
+
+			<li><p>What is the definition of insanity?</p></li>
+				<p><input type="radio" name="defn" value="defnOne" />The willingness to watch a Quentin Tarantino Film</p>
+				<p><input type="radio" name="defn" value="defnTwo" />Going to the baby section at a Black Friday sale</p>
+				<p><input type="radio" name="defn" value="defnThree" />Doing the same thing over and over again and expecting different results.</p>
+
+			<li><p>Who says "eh, what's up doc"?</p></li>
+				<p><input type="radio" name="looneyToon" value="Bugs" />Bugs Bunny</p>
+				<p><input type="radio" name="looneyToon" value="Daffy" />Daffy Duck</p>
+				<p><input type="radio" name="looneyToon" value="Foghorn" />Foghorn Leghorn</p>
+
+			<li><p>What does the fox say?</p></li>
+				<p><input type="radio" name="fox" value="fraka" />fraka-kaka-kaka-kaka-kow!</p>
+				<p><input type="radio" name="fox" value="gering" />gering-ding-ding-ding-dingeringeding!</p>
+				<p><input type="radio" name="fox" value="idk" />I have no idea</p>
+
+			<li><p>Who sings Ballad of Curtis Loew?</p></li>
+				<p><input type="radio" name="song" value="lynyrd" />Lynyrd Skynyrd</p>
+				<p><input type="radio" name="song" value="elton" />Elton John</p>
+				<p><input type="radio" name="song" value="elvis" />Elvis Presley</p>
+		</ol>
+
+		<button type="button" name="Submit" value="Submit" onclick="getScore();">Submit</button>
+
+	</body>
+</html>
